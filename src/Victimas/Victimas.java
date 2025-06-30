@@ -2,6 +2,8 @@
 package Victimas;
 
 import java.util.Objects;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 /**
  *
  * @author bycha
@@ -9,13 +11,13 @@ import java.util.Objects;
 public class Victimas {
 public String Cedula;
 public String Name;
-public String Birthdate;
+public DateTimeFormatter Birthdate;
 public String Gender;
 private String Email;
 private int Phone;
 private String Location ;
 
-    public Victimas(String Cedula, String Name, String Birthdate, String Gender, String Email, int Phone, String Location) {
+    public Victimas(String Cedula, String Name, DateTimeFormatter Birthdate, String Gender, String Email, int Phone, String Location) {
         
         this.Cedula = Cedula;
         this.Name = Name;
@@ -36,24 +38,12 @@ private String Location ;
         return Name;
     }
 
-    public String getBirthdate() {
+    public DateTimeFormatter getBirthdate() {
         return Birthdate;
     }
 
     public String getGender() {
         return Gender;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public int getPhone() {
-        return Phone;
-    }
-
-    public String getLocation() {
-        return Location;
     }
 
     public void setEmail(String Email) {
@@ -94,6 +84,11 @@ private String Location ;
         return Objects.equals(this.Location, other.Location);
     }
 
+    @Override
+    public String toString() {
+        return "Victimas{" + "Cedula=" + Cedula + ", Name=" + Name + ", Birthdate=" + Birthdate + ", Gender=" + Gender + ", Email=" + Email + ", Phone=" + Phone + ", Location=" + Location + '}';
+    }
+
    
-    
+  
 }
