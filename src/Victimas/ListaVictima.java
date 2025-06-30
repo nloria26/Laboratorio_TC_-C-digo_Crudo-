@@ -8,7 +8,7 @@ import Listas.Lista;
  */
 public class ListaVictima implements Lista<Victima> {
     
-     private static Victima victima[];
+     private  Victima victima[];
 
     public ListaVictima(Victima[] Victima) {
         this.victima = new Victima[100];
@@ -59,4 +59,5 @@ public class ListaVictima implements Lista<Victima> {
                                 }                        
                                                  }
 }
+  
 }
