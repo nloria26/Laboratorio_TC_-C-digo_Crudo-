@@ -21,21 +21,20 @@ public class ListaVictima implements Lista<Victima> {
         for (int i = 0; i < max; i++) {
             if(victima[i] == id){
                 return victima[i];
-            }
-        } 
+                                }
+                                      } 
         return null;
     }
 
     @Override
     public boolean agregar(Victima Victima) {
-       
         int max=victima.length;
         for (int i=0;i<max;i++){
             if(victima[i]==null){
                 victima[i]=Victima;
                 return true;
-            }
-        }
+                                }
+                               }
         return false;
     }
     
@@ -47,8 +46,8 @@ public class ListaVictima implements Lista<Victima> {
             if(victima[i]==Victima){
                 victima[i]=null;
                 return true;
-            }
-        }
+                                   }
+                               }
         return false; 
     }
 
@@ -57,7 +56,7 @@ public class ListaVictima implements Lista<Victima> {
        for (int i = 0; i < victima.length; i++) {
         if (victima[i] != null) {
             System.out.println("- " + victima[i]);
-        }
-    }
-    }
+                                }                        
+                                                 }
+}
 }
