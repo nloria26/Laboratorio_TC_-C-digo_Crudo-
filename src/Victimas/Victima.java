@@ -2,6 +2,6 @@
 package Victimas;
 
 
-public class Victimas {
+public class Victima {
     
 }
